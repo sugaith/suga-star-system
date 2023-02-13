@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "prettier/prettier",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "project": ["tsconfig.json"],
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "semi": ["error", "never"],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto",
+                "semi": false,
+                "trailingComma": "all",
+                "singleQuote": true
+            },
+            {
+                "usePrettierrc": false
+            }
+        ]
+    }
+}
