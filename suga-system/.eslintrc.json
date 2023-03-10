@@ -5,14 +5,10 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard-with-typescript",
         "prettier/prettier",
         "plugin:prettier/recommended"
     ],
-    "overrides": [
-    ],
     "parserOptions": {
-        "project": ["tsconfig.json"],
         "ecmaVersion": "latest",
         "sourceType": "module",
         "ecmaFeatures": {
